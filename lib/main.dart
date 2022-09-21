@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterfeatures/Design/cards.dart';
+import 'package:flutterfeatures/Design/gridcards.dart';
 import 'package:flutterfeatures/Routes/routedemo.dart';
 
 void main() {
@@ -26,6 +27,9 @@ class MyApp extends StatelessWidget {
         'cards': (ctx) {
           return const Cards();
         },
+        'gridcards': (ctx) {
+          return const Gridcards();
+        },
       },
     );
   }
@@ -33,8 +37,8 @@ class MyApp extends StatelessWidget {
 
 class Home extends StatelessWidget {
   Home({Key? key}) : super(key: key);
-  final List<String> names = ['Routes', 'Cards'];
-  final List<String> items = ['routes', 'cards'];
+  final List<String> names = ['Routes', 'Cards','Gridcards'];
+  final List<String> items = ['routes', 'cards','gridcards'];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
