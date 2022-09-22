@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutterfeatures/Design/cards.dart';
 import 'package:flutterfeatures/Design/gridcards.dart';
+import 'package:flutterfeatures/Pages/Homedesign.dart';
+import 'package:flutterfeatures/Pages/designone.dart';
+import 'package:flutterfeatures/Pages/signup.dart';
 import 'package:flutterfeatures/Routes/routedemo.dart';
 
 void main() {
@@ -30,6 +33,15 @@ class MyApp extends StatelessWidget {
         'gridcards': (ctx) {
           return const Gridcards();
         },
+        'homedesign': (ctx) {
+          return const Homedesign();
+        },
+        'designtwo': (ctx) {
+          return const Designone();
+        },
+        'signup': (ctx) {
+          return const SignupPage();
+        },
       },
     );
   }
@@ -37,8 +49,14 @@ class MyApp extends StatelessWidget {
 
 class Home extends StatelessWidget {
   Home({Key? key}) : super(key: key);
-  final List<String> names = ['Routes', 'Cards','Gridcards'];
-  final List<String> items = ['routes', 'cards','gridcards'];
+  final List<String> items = [
+    'routes',
+    'cards',
+    'gridcards',
+    'homedesign',
+    'designtwo',
+    'signup',
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,7 +68,7 @@ class Home extends StatelessWidget {
           itemCount: items.length,
           itemBuilder: (context, index) {
             return ListTile(
-              title: Text(names[index]),
+              title: Text(items[index].toString().toUpperCase()),
               onTap: () {
                 Navigator.pushNamed(context, items[index]);
               },
