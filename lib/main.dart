@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterfeatures/Design/cards.dart';
 import 'package:flutterfeatures/Design/gridcards.dart';
-import 'package:flutterfeatures/Pages/Homedesign.dart';
+import 'package:flutterfeatures/Pages/homedesign.dart';
 import 'package:flutterfeatures/Pages/designone.dart';
 import 'package:flutterfeatures/Pages/signup.dart';
 import 'package:flutterfeatures/Routes/routedemo.dart';
