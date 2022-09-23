@@ -486,37 +486,6 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: <Widget>[
-          Container(
-            height: 64,
-            width: 64,
-            decoration: BoxDecoration(
-                color: Colors.yellow,
-                shape: BoxShape.circle,
-                boxShadow: [
-                  BoxShadow(
-                      color: Colors.black.withOpacity(0.05),
-                      blurRadius: 3,
-                      spreadRadius: 4)
-                ]),
-          ),
-          const SizedBox(
-            height: 8,
-          ),
-          TextButton(
-            child: const Text("BA Statistics"),
-            onPressed: () {
-              Navigator.of(context).pushNamed('semester');
-              // Navigator.pushReplacement(
-              //     context,
-              //     MaterialPageRoute(
-              //         builder: (context) => Semester()));
-            },
-          ),
-        ],
-      ),
-    );
+    return Container();
   }
 }
